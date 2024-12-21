@@ -1,0 +1,60 @@
+/* Style pour la navbar */
+.navbar {
+  position: fixed; /* Fixe la navbar en haut */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Fond blanc */
+  z-index: 1000; /* La navbar reste au-dessus du contenu */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre sous la navbar */
+  padding: 10px 20px;
+  display: flex; /* Utilisation de flexbox pour aligner horizontalement */
+  justify-content: space-between; /* Place le titre à gauche et les liens à droite */
+  align-items: center; /* Centre verticalement le contenu */
+  box-sizing: border-box; /* Pour inclure padding et bordure dans la taille totale */
+}
+
+.navbar-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: auto; /* Assure que le titre soit collé à gauche */
+}
+
+.navbar-nav {
+  display: flex; /* Affiche les liens de manière horizontale */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap; /* Permet à la navbar de se réorganiser si l'écran est petit */
+}
+
+.nav-item {
+  margin-left: 20px; /* Espace entre les éléments de la navbar */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  color: #007BFF;
+}
+
+/* Style des sections */
+.section {
+  padding: 100px 20px; /* Ajouter de l'espace pour que le contenu ne soit pas caché sous la navbar */
+  margin-top: 50px; /* Ajoute un peu de marge au dessus des sections pour compenser la navbar */
+}
+
+.home-container {
+  text-align: center;
+  margin-top: 80px; /* Pour que l'image ne soit pas cachée sous la navbar */
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
