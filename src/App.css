@@ -1,35 +1,35 @@
-/* Style pour la navbar */
+            /*****************Navbar*********************/
 .navbar {
-  position: fixed; /* Fixe la navbar en haut */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff; /* Fond blanc */
-  z-index: 1000; /* La navbar reste au-dessus du contenu */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre sous la navbar */
+  background-color: #fff; 
+  z-index: 1000; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   padding: 10px 20px;
-  display: flex; /* Utilisation de flexbox pour aligner horizontalement */
-  justify-content: space-between; /* Place le titre à gauche et les liens à droite */
-  align-items: center; /* Centre verticalement le contenu */
-  box-sizing: border-box; /* Pour inclure padding et bordure dans la taille totale */
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box; 
 }
 
 .navbar-title {
   font-size: 2rem;
   font-weight: bold;
-  margin-right: auto; /* Assure que le titre soit collé à gauche */
+  margin-right: auto; 
 }
 
 .navbar-nav {
-  display: flex; /* Affiche les liens de manière horizontale */
+  display: flex; 
   list-style: none;
   padding: 0;
   margin: 0;
-  flex-wrap: wrap; /* Permet à la navbar de se réorganiser si l'écran est petit */
+  flex-wrap: wrap; 
 }
 
 .nav-item {
-  margin-left: 20px; /* Espace entre les éléments de la navbar */
+  margin-left: 20px;
 }
 
 .nav-link {
@@ -42,19 +42,58 @@
   color: #007BFF;
 }
 
-/* Style des sections */
-.section {
-  padding: 100px 20px; /* Ajouter de l'espace pour que le contenu ne soit pas caché sous la navbar */
-  margin-top: 50px; /* Ajoute un peu de marge au dessus des sections pour compenser la navbar */
-}
 
+.section {
+  padding: 100px 20px; 
+  margin-top: 50px; 
+}
+/*******************************Home*************************************/
 .home-container {
   text-align: center;
-  margin-top: 80px; /* Pour que l'image ne soit pas cachée sous la navbar */
+  margin-top: 80px; 
 }
 
 .home-image {
   width: 100%;
   height: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/********************************* Card.js*****************************************/
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: #4caf50; 
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
 }

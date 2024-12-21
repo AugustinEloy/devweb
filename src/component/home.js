@@ -9,6 +9,7 @@ const Home = () => {
         alt="Augustin Eloy"
         className="home-image"
       />
+      <h1 className='Title_header'>Augustin Developer Web</h1>
     </div>
   );
 };
