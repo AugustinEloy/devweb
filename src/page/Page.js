@@ -3,9 +3,8 @@ import '../App.css';
 import Home from "../component/home";
 import Nav from "../component/nav";
 import Service from "../component/service";
-import Contact from "../component/contact";
 import Experience from "../component/expereince";
-import Footer from "../component/footer";
+import Contact from "../component/contact";
 
 
 const Page = () =>{
@@ -15,8 +14,7 @@ const Page = () =>{
             <Home />
             <Service />
             <Experience />
-            <Contact />
-            <Footer />
+            <Contact/>
         </div>
     )
 }

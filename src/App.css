@@ -1,18 +1,29 @@
-            /*****************Navbar*********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body{
+  width: 100%;
+  overflow-x: hidden;
+}     
+          /******************************Navbar*********************************/
 .navbar {
   position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff; 
-  z-index: 1000; 
+  z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   padding: 10px 20px;
   display: flex; 
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box; 
+  background: transparent;
 }
+
 
 .navbar-title {
   font-size: 2rem;
@@ -34,7 +45,7 @@
 
 .nav-link {
   text-decoration: none;
-  color: #333;
+  color: Black;
   font-size: 1rem;
 }
 
@@ -43,23 +54,106 @@
 }
 
 
-.section {
-  padding: 100px 20px; 
-  margin-top: 50px; 
-}
+
 /*******************************Home*************************************/
 .home-container {
+  position: relative; 
+  width: 100%;
+  height: 100vh; 
   text-align: center;
-  margin-top: 80px; 
+  overflow: visible;
 }
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%; 
+
+}
+
 
 .home-image {
   width: 100%;
-  height: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  object-fit: cover; 
+  position: relative; 
 }
-/********************************* Card.js*****************************************/
+
+.Title_header {
+  position: absolute;
+  top: 40%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.typing-animation {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+  animation: blink 0.5s step-end infinite; 
+}
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.5rem;
+  background-color: white;
+  margin-left: 2px;
+  animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12ch; 
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+/********************************* Card.js/Service *****************************************/
+.service{
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.service h2{
+  text-align: center;
+  color: #0078ff;
+  margin-bottom: 5%;
+}
 .card {
+  width: 25%;
+  min-height:50vh;
   background: #fff;
   border-radius: 10px;
   padding: 1.5rem;
@@ -76,7 +170,7 @@
 
 .card-icon {
   font-size: 2rem;
-  color: #4caf50; 
+  color: #0078ff; 
   margin-bottom: 1rem;
 }
 
@@ -96,4 +190,192 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
+}
+/****************************************Experience/modal*****************************/
+
+.cardwork {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  overflow: hidden; 
+  max-width: 300px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardwork:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.cardwork img {
+  width: 100%; 
+  max-height: 150px; 
+  object-fit: cover; 
+  object-position: top; 
+}
+
+
+.card-titlew {
+  font-size: 1.25rem;
+  color: #0078ff;
+  text-align: center;
+  min-height: 2rem; 
+  padding: 5%;
+}
+
+.card-descriptionw {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  padding: 0 1rem 1rem;
+  min-height: 3rem; 
+}
+
+.portfolio_card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding-top: 1rem;
+  margin-top: 3%;
+  padding-bottom: 5%;
+  
+}
+
+.experience {
+  margin-top: 10%;
+  background-color: #0078ff;
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+  
+}
+.experience h2{
+  padding-top: 2%;
+}
+                  /*modal */
+.modal {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.8); 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  z-index: 1000; 
+ 
+}
+
+
+.modal-content {
+  position: relative;
+  background: #fff; 
+  padding: 1rem; 
+  border-radius: 10px; 
+  max-width: 90%; 
+  max-height: 90%;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.modal-image {
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+  max-height: 80vh; 
+}
+
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem; 
+  color: #0078ff; 
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.close-button:hover {
+  color: #0056b3; 
+}
+
+/**************************Contact/Footer******************************/
+/* Footer */
+.footer {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  padding: 2rem;
+  min-height: 30vh; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+footer h2{
+  margin-bottom: 3%;
+  color:#007BFF;
+}
+
+/* Contact Form */
+.contact-form {
+  margin-left: 20%;
+  border-radius: 8px;
+  box-shadow: none; 
+  width: 100%; 
+  color: #333; 
+  display: flex;
+  flex-direction: column;
+ 
+ 
+
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 80%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #0078ff;
+  
+}
+
+button {
+  width: 80%;
+  padding: 0.75rem;
+  margin-top: 3%;
+  background-color: #0078ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
 }
