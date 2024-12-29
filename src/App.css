@@ -566,4 +566,16 @@ button:hover {
     width: 90%; 
     flex-direction: column; 
   } 
+  .modal-content {
+    width: 95%; 
+  }
+
+  .modal-image {
+    max-width: 100%;
+    max-height: 75vh; 
+  }
+
+  .close-button {
+    font-size: 20px; 
+  }
 }
