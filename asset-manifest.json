@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/devweb/static/css/main.31afa74a.css",
+    "main.js": "/devweb/static/js/main.7e52e736.js",
+    "static/js/488.975d303b.chunk.js": "/devweb/static/js/488.975d303b.chunk.js",
+    "static/media/software-developer-6521720_1920.jpg": "/devweb/static/media/software-developer-6521720_1920.245e17fff03c87d075a6.jpg",
+    "static/media/impression.avif": "/devweb/static/media/impression.491712f0e877893fc48a.avif",
+    "static/media/Screenshot 2024-09-15 at 19-13-22 Booki.avif": "/devweb/static/media/Screenshot 2024-09-15 at 19-13-22 Booki.9af873a8b428fdac6a94.avif",
+    "static/media/Screenshot 2024-12-29 at 05-41-01 Sophie Bluel - Architecte d'intérieur.avif": "/devweb/static/media/Screenshot 2024-12-29 at 05-41-01 Sophie Bluel - Architecte d'intérieur.01cad6f4165ca1197c16.avif",
+    "static/media/Screenshot 2024-12-27 at 01-09-05 React App.avif": "/devweb/static/media/Screenshot 2024-12-27 at 01-09-05 React App.3b9c39e9091a1c6941ea.avif",
+    "index.html": "/devweb/index.html",
+    "main.31afa74a.css.map": "/devweb/static/css/main.31afa74a.css.map",
+    "main.7e52e736.js.map": "/devweb/static/js/main.7e52e736.js.map",
+    "488.975d303b.chunk.js.map": "/devweb/static/js/488.975d303b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31afa74a.css",
+    "static/js/main.7e52e736.js"
+  ]
+}
