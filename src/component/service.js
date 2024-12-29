@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./cardserv";
 import '../App.css'
-import { faDesktop, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faDesktop, faCode, faTabletScreenButton, faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons';
 
 const Service = () => {
     return (
@@ -10,7 +10,7 @@ const Service = () => {
         <div className="services-container" id="services">
             <Card 
             icon={faDesktop}
-            title="Develloper web"
+            title="Developer web"
             description="Je conçois et développe des sites web modernes et performants, adaptés à vos besoins spécifiques. De la création de interfaces intuitives à l'implémentation de fonctionnalités avancées, je m'assure que votre présence en ligne soit à la hauteur de vos attentes."
 
             />
@@ -21,13 +21,13 @@ const Service = () => {
 
             />
               <Card 
-            icon={faDesktop}
+            icon={faTabletScreenButton}
             title="Responsive Design"
             description="Je crée des designs responsives qui garantissent une expérience utilisateur optimale sur tous les appareils. Que ce soit sur mobile, tablette ou desktop, votre site sera toujours esthétique, fonctionnel et facile à naviguer."
 
             />
             <Card 
-            icon={faCode}
+            icon={faUpRightAndDownLeftFromCenter} 
             title="Fullstack developer"
             description="En tant que développeur fullstack, je maîtrise à la fois le frontend et le backend de vos projets web. De la conception de l'interface utilisateur à la gestion des bases de données et des serveurs, je vous offre une solution complète et intégrée pour vos besoins numériques."
 

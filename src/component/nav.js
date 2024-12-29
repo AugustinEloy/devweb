@@ -10,6 +10,9 @@ const Nav = () => {
           <a className="nav-link js-scroll active" href="#home">Home</a>
         </li>
         <li className="nav-item">
+          <a className="nav-link js-scroll active" href="#aboutme">Aboutme</a>
+        </li>
+        <li className="nav-item">
           <a className="nav-link js-scroll" href="#services">Services</a>
         </li>
         <li className="nav-item">
